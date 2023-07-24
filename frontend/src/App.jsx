@@ -1,12 +1,18 @@
 import './App.css'
+import { About, Footer, Header, Skills, Testimonials, Work } from './container';
 
 function App() {
 
   return (
-    <>
-      App
-    </>
-  )
+      <div className='app'>
+          <Header />
+          <About />
+          <Work />
+          <Skills />
+          <Testimonials />
+          <Footer />
+      </div>
+  );
 }
 
 export default App
