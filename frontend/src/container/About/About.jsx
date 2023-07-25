@@ -15,7 +15,7 @@ const About = () => {
         client.fetch(query).then((data) => {
             setAbouts(data);
         });
-    });
+    }, []);
     return (
         <>
             <h2 className='head-text'>
