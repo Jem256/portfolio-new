@@ -41,7 +41,7 @@ const Skills = () => {
                                 style={{ backgroundColor: skill.bgColor }}
                             >
                                 <img
-                                    src={urlFor(skill.icon)}
+                                    src={urlFor(skill.icon).url()}
                                     alt={skill.name}
                                 />
                             </div>

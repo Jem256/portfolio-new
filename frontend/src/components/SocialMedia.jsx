@@ -1,17 +1,28 @@
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs';
 const SocialMedia = () => {
     return (
         <div className='app__social'>
-            <div>
+            <a
+                href='https://www.linkedin.com/in/jemimah-nagasha-99b256190/'
+                target='_blank'
+                rel='noreferrer'
+            >
+                <BsGithub />
+            </a>
+            <a
+                href='https://www.linkedin.com/in/jemimah-nagasha-99b256190/'
+                target='_blank'
+                rel='noreferrer'
+            >
+                <BsLinkedin />
+            </a>
+            <a
+                href='https://twitter.com/nagasha_'
+                target='_blank'
+                rel='noreferrer'
+            >
                 <BsTwitter />
-            </div>
-            <div>
-                <FaFacebookF />
-            </div>
-            <div>
-                <BsInstagram />
-            </div>
+            </a>
         </div>
     );
 };

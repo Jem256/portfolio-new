@@ -16,6 +16,7 @@ const About = () => {
             setAbouts(data);
         });
     }, []);
+    // console.log('abouts', abouts);
     return (
         <>
             <h2 className='head-text'>
@@ -24,7 +25,7 @@ const About = () => {
             </h2>
 
             <div className='app__profiles'>
-                {abouts.map((about, index) => (
+                {abouts?.map((about, index) => (
                     <motion.div
                         whileInView={{ opacity: 1 }}
                         whileHover={{ scale: 1.1 }}
@@ -32,7 +33,10 @@ const About = () => {
                         className='app__profile-item'
                         key={about.title + index}
                     >
-                        <img src={urlFor(about.imgUrl)} alt={about.title} />
+                        <img
+                            src={urlFor(about.imgUrl).url()}
+                            alt={about.title}
+                        />
                         <h2 className='bold-text' style={{ marginTop: 20 }}>
                             {about.title}
                         </h2>
