@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
-import { urlFor, client } from '../../client';
+import { client } from '../../client';
 
 const About = () => {
     const [abouts, setAbouts] = useState([]);
@@ -16,7 +16,7 @@ const About = () => {
             setAbouts(data);
         });
     }, []);
-    // console.log('abouts', abouts);
+    console.log('abouts', abouts);
     return (
         <>
             <h2 className='head-text'>
@@ -27,22 +27,28 @@ const About = () => {
             <div className='app__profiles'>
                 {abouts?.map((about, index) => (
                     <motion.div
-                        whileInView={{ opacity: 1 }}
-                        whileHover={{ scale: 1.1 }}
-                        transition={{ duration: 0.5, type: 'tween' }}
+                        // whileInView={{ opacity: 1 }}
+                        // whileHover={{ scale: 1.1 }}
+                        // transition={{ duration: 0.5, type: 'tween' }}
                         className='app__profile-item'
                         key={about.title + index}
                     >
-                        <img
+                        {/* <img
                             src={urlFor(about.imgUrl).url()}
                             alt={about.title}
-                        />
-                        <h2 className='bold-text' style={{ marginTop: 20 }}>
-                            {about.title}
-                        </h2>
+                        /> */}
+                        <h2 className='bold-text'>{about.title}</h2>
                         <p className='p-text' style={{ marginTop: 10 }}>
                             {about.description}
                         </p>
+                        <a
+                            href='https://cdn.sanity.io/files/qaz75joi/production/8447b54b9f2880115bd730d87f7ae490c34ab870.pdf'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='btn'
+                        >
+                            Download CV
+                        </a>
                     </motion.div>
                 ))}
             </div>
