@@ -11,7 +11,7 @@
 	align-items: center;
 	flex-wrap: wrap;
   
-	margin: 4rem 0 2rem;
+	margin: 1rem 0 2rem;
   
 	.app__work-filter-item {
 	  padding: 0.5rem 1rem;
@@ -48,10 +48,10 @@
 	align-items: center;
   
 	.app__work-item {
-	  width: 270px;
+	  width: 350px;
 	  flex-direction: column;
   
-	  margin: 2rem;
+	  margin: 1rem 2rem;
 	  padding: 1rem;
 	  border-radius: 0.5rem;
 	  background-color: #fff;
@@ -135,15 +135,24 @@
 	width: 100%;
 	position: relative;
 	flex-direction: column;
-  
-	h4 {
-	  margin-top: 1rem;
-	  line-height: 1.5;
-  
-	  @media screen and (min-width: 2000px) {
-		margin-top: 3rem;
-	  }
+
+	.app__work-title {
+		gap: 1rem;
+		margin-top: 1rem;
+
+		h4 {
+		  line-height: 1.5;
+	  
+		  @media screen and (min-width: 2000px) {
+			margin-top: 3rem;
+		  }
+		}
+		
+		.app__work-icons{
+			gap: 0.5rem;
+		}
 	}
+  
   
 	.app__work-tag {
 	  position: absolute;

@@ -1,5 +1,5 @@
 import './App.scss';
-import { About, Footer, Header, Skills, Testimonials, Work } from './container';
+import { About, Footer, Header, Skills, Work } from './container';
 import { Navbar } from './components';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
             <About />
             <Work />
             <Skills />
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Footer />
         </div>
     );
