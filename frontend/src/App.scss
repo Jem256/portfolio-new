@@ -179,11 +179,12 @@
   @media screen and (max-width: 500px) {
 	.app__navigation,
 	.app__social {
-	flex-direction: row;
+		display: none;
+	
 	}
   
 	.copyright {
 	//   padding: 2rem;
-	display: none;
+	  display: none;
 	}
   }

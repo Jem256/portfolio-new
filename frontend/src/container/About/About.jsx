@@ -16,7 +16,7 @@ const About = () => {
             setAbouts(data);
         });
     }, []);
-    console.log('abouts', abouts);
+
     return (
         <>
             <h2 className='head-text'>

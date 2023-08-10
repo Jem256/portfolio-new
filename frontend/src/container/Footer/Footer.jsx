@@ -4,6 +4,7 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
+import { BsTwitter, BsGithub, BsLinkedin } from 'react-icons/bs';
 
 const Footer = () => {
     const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ const Footer = () => {
 
     return (
         <>
-            <h2 className='head-text'>Take a coffee & chat with me</h2>
+            <h2 className='head-text'> Let&apos;s Work Together</h2>
 
             <div className='app__footer-cards'>
                 <div className='app__footer-card '>
@@ -55,6 +56,29 @@ const Footer = () => {
                     <img src={images.mobile} alt='phone' />
                     <a href='tel:+256705464186' className='p-text'>
                         +(256) 705-464-186
+                    </a>
+                </div>
+                <div className='app__footer-social'>
+                    <a
+                        href='https://github.com/Jem256'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <BsGithub />
+                    </a>
+                    <a
+                        href='https://www.linkedin.com/in/jemimah-nagasha-99b256190/'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <BsLinkedin />
+                    </a>
+                    <a
+                        href='https://twitter.com/nagasha_'
+                        target='_blank'
+                        rel='noreferrer'
+                    >
+                        <BsTwitter />
                     </a>
                 </div>
             </div>
