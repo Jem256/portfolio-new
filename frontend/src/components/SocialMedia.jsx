@@ -3,7 +3,7 @@ const SocialMedia = () => {
     return (
         <div className='app__social'>
             <a
-                href='https://www.linkedin.com/in/jemimah-nagasha-99b256190/'
+                href='https://github.com/Jem256'
                 target='_blank'
                 rel='noreferrer'
             >
