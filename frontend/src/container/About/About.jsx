@@ -42,7 +42,7 @@ const About = () => {
                             {about.description}
                         </p>
                         <a
-                            href={about.cvUrl}
+                            href='https://cdn.sanity.io/files/qaz75joi/production/390e1c380a23807fd555aee450e0779ef423aa04.pdf'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='btn'
